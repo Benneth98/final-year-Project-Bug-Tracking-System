@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <title>BugTracker.com</title>
+</head>
+<body>
+    <nav>  
+         <div class="logo">
+       <h4>Bug Tracking System</h4>
+   </div> 
+   <ul class="nav-links">
+       <li><a href="#">Home</a></li>
+       <li><a href="#">Administrator</a></li>
+       <li><a href="#">Technical Expert</a></li>
+       <li><a href="#">User</a></li>
+        <li><a href="#"><span>Sign Up</span></a></li>
+   </ul>
+
+    <ul class="navbar">
+        <li><a id="reload"><span>Home</span></a></li>
+        <li><a id="admini" onclick="display()"><span>Administrator</span></a></li>
+        <li><a id="tech" onclick="display2()"><span>Technical Expert</span></a></li>
+        <li><a id="userr" onclick="display3()"><span>User</span></a></li>
+ 
+    </ul>
+
+   <div class="burger">
+       <div class="line1"></div>
+       <div class="line2"></div>
+       <div class="line3"></div>
+   </div>
+   
+
+</nav>
+
+<section class="hero" id="hero">
+
+    <div class="container">
+        <div class="left-col">
+            <p class="subhead"><span>Efficiency &amp Accuracy</span></p>
+            <h1>Overcome defects with BTS. Report Bugs Immediately!</h1>
+        </div>
+
+        <img src="images/37091-1-bugs-transparent-background.png" class="hero-img" alt="Bug">
+    </div>
+</section>
+
+<section class="features-section" id="features">
+    <div class="container">
+        <ul>
+            <li>
+                <img src="images/shutterstock_609844004.jpg" alt="Gears">
+                <h2 class="admin">Sign in as <span>Admin</span></h2>
+                <p>An Administrator can assign various reported bugs to different Technical Experts and update the status of bugs.</p>
+
+            </li>
+
+            <li>
+                <img src="images/gears-top-image.jpg" alt="Gears">
+                <h2 class="expert">Sign in as <span>Expert</span></h2>
+                <p>A Technical Expert can give comments on the Reported Bugs and try to fix them.</p>
+
+            </li>
+
+            <li>
+                <img src="images/gearbearings.jpg" alt="Gears">
+                <h2 class="user">Sign in as <span>User</span></h2>
+                <p>A Normal User can sign in for Reporting Bugs to the Sofware Management Team.</p>
+
+            </li>
+
+            <li>
+                <p class="firstcol">Use the menu bar to login to your account or sign up to join the team.</p>
+                <p class="seccol"><a onclick="signdisplay()">Sign up</a></p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="contact-section" id="contact">
+    <div class="container">
+        <div class="contact-left">
+            <h2><span>Contact</span></h2>
+
+            <form action="">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                <input type="submit" class="send-message-cta" value="Send Message">
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="login-section" id="loginview">
+    <div class="containment">
+    <div class="form">
+        <h1 class="A">Admin</h1>
+        <form class="login-form">
+            <input type="text" placeholder="username">
+            <input type="text" placeholder="password">
+            <input type="text" placeholder="type">
+            <a class="button" onclick="admindis()">Login</a>
+
+
+        </form>
+    </div>
+</div>
+
+
+</section>
+
+<section class="login-section" id="loginview1">
+    <div class="containment">
+    <div class="form">
+        <h1 class="E">Expert</h1>
+        <form class="login-form">
+            <input type="text" placeholder="username">
+            <input type="text" placeholder="password">
+            <input type="text" placeholder="type">
+            <a class="button2" onclick="expertdis()">Login</a>
+
+
+        </form>
+    </div>
+</div>
+
+
+</section>
+
+<section class="login-section" id="loginview2">
+    <div class="containment">
+    <div class="form">
+        <h1 class="U">User</h1>
+        <form class="login-form">
+            <input type="text" placeholder="username">
+            <input type="text" placeholder="password">
+            <input type="text" placeholder="type">
+            <a class="button3" onclick="userdis()">Login</a>
+
+
+        </form>
+    </div>
+</div>
+
+
+</section>
+
+<section class="reg-section" id="regview">
+    <div class="containment">
+    <div class="form">
+        <form class="registration-form">
+            <input type="text" placeholder="username">
+            <input type="text" placeholder="password">
+            <input type="text" placeholder="confirm password">
+            <input type="text" placeholder="email">
+            <input type="text" placeholder="type">
+            <a class="button4">Create</a>
+
+    </div>
+</div>
+
+
+</section>
+
+<section class="Admin-section" id="Adminview">
+    <div class="containment1">
+        <div class="leftside">
+            <ul>
+                <li><a href="#">View Bugs</a></li>
+                <li><a href="#">Configure Experts</a></li>
+                <li><a href="#">Add Expert</a></li>
+            </ul>
+        </div>
+
+        <div class="rightside">
+            <p>As an Administrator you can: </p>
+            <ul>
+                <li>-View all reported bugs, assign bugs to different Technical Experts to fix it.</li>
+                <li>-Configure different Technical Experts for different Teams for a particular Software Product.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="Expert-section" id="expertview"> //INCOMPLETE//
+    <div class="containment2">
+       
+        <div class="search-container">
+            <input type="text" placeholder="Search for bugs" id="">
+        </div>
+
+        <div class="inbox-title">
+            <h1>Message Title:</h1>
+            <p>Message details:</p>
+        </div>
+
+        <div class="new-message-container">
+            <h1>Bugs assigned to you</h1>
+        </div>
+
+        <div class="message-view">
+            
+        </div>
+
+    </div>
+</section>
+
+<section class="User-section" id="userview">
+    <div class="containment1">
+        <div class="leftside">
+            <ul>
+                <li><a href="#">Report Bug</a></li>
+                <li><a href="#">View Status</a></li>
+            </ul>
+        </div>
+
+        <div class="rightside">
+            <p>Reporting Bugs as a User: </p>
+            <ul>
+                <li>-Select Product, Environment and Type for the Bug being reported by you.</li>
+                <li>-Try to describe your bug precisely and write the steps to reproduce the bug again.</li>
+                <li>-Also specify some erroneous behaviour of the program when bug appears.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<script src="app.js"></script>
+
+</body>
+</html>

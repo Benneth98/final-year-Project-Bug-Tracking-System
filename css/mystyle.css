@@ -1,0 +1,791 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #83cc83;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.navbar {
+  display: none;
+  font-size: 1em;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  margin-top: 0;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8vh;
+  background: #77fa5c;
+  font-family: 'Poppins';
+}
+
+nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.logo {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 15px;
+}
+
+.nav-links li {
+  list-style: none;
+  margin: 1em 0 3em 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.nav-links {
+  position: absolute;
+  right: 0px;
+  top: 8vh;
+  height: 92vh;
+  width: 55%;
+  background-color: #77fa5c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+
+.nav-links li {
+  opacity: 0;
+}
+
+.nav-links li span {
+  color: white;
+  font-size: 25px;
+  background: black;
+  border-radius: 5em;
+  padding: .4em;
+}
+
+.nav-links li span:hover {
+  font-weight: bold;
+  background: #77fa5c;
+  border: 5px solid black;
+  color: black;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+.nav-links a:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.burger {
+  display: block;
+}
+
+.nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.left-col .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background: grey;
+  border-radius: 5em;
+  letter-spacing: .3em;
+}
+
+.left-col h1 {
+  font-size: 2em;
+  line-height: 1.3em;
+  margin-top: .2em;
+}
+
+.hero-img {
+  width: 80%;
+  margin-top: 2.5em;
+}
+
+.features-section {
+  background: grey;
+}
+
+.features-section li {
+  background: #77fa5c;
+  text-align: center;
+  padding: 2em 1em;
+  width: 80%;
+  margin: 0 auto 5em auto;
+  border-radius: 1em;
+}
+
+.features-section li img {
+  width: 5em;
+  height: 5em;
+  border: 5px solid #77fa5c;
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
+
+.features-section li .admin {
+  background: black;
+  color: white;
+  border-radius: 5em;
+  margin-bottom: .5em;
+}
+
+.features-section li .admin span {
+  color: #77fa5c;
+}
+
+.features-section li .expert {
+  background: black;
+  color: white;
+  border-radius: 5em;
+  margin-bottom: .5em;
+}
+
+.features-section li .expert span {
+  color: #77fa5c;
+}
+
+.features-section li .user {
+  background: black;
+  color: white;
+  border-radius: 5em;
+  margin-bottom: .5em;
+}
+
+.features-section li .user span {
+  color: #77fa5c;
+}
+
+.features-section li .seccol {
+  display: none;
+}
+
+.contact-section span {
+  font-size: 1.5em;
+}
+
+.contact-section label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: .5em;
+}
+
+.contact-section input, .contact-section textarea {
+  width: 100%;
+  padding: .8em;
+  margin-bottom: 1em;
+  border-radius: .3em;
+  border: 1px solid grey;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact-section .send-message-cta {
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  border: 2px solid black;
+  border-radius: 5em;
+  display: inline-block;
+  padding: .8em 2em;
+  width: unset;
+}
+
+.contact-section .send-message-cta:hover {
+  background: black;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+  .navbar {
+    margin-left: -3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+  .navbar span {
+    color: black;
+    margin-left: 2em;
+    border: 3px solid black;
+    border-radius: 5em;
+    padding: .4em;
+    font-size: .9em;
+  }
+  .features-section ul {
+    display: block;
+  }
+  .features-section ul .seccol a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: .4em;
+    border-radius: 5em;
+    font-size: 1.5em;
+  }
+  .features-section ul .seccol a:hover {
+    color: black;
+    background-color: #77fa5c;
+    border: 3px solid black;
+  }
+  .features-section ul li {
+    margin: 5em;
+  }
+  .features-section ul li .seccol {
+    display: block;
+    font-weight: bold;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  .contact-section {
+    position: relative;
+  }
+  .contact-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: auto;
+  }
+  .navbar {
+    font-size: 1.12em;
+  }
+  section {
+    padding: 10em 4em;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .hero .container .left-col {
+    margin: 3em 3em 0 5em;
+  }
+  .hero .container .left-col .subhead {
+    background-color: #83cc83;
+  }
+  .hero .container .left-col .subhead span {
+    background-color: gray;
+    padding: .4em;
+    border-radius: 5em;
+  }
+  .hero .container .left-col h1 {
+    font-size: 3em;
+    width: 90%;
+  }
+  .hero-img {
+    width: 80%;
+    margin-right: 8em;
+    margin-top: -1em;
+  }
+  .features-section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .features-section ul .seccol a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: .4em;
+    border-radius: 5em;
+    font-size: 1.5em;
+  }
+  .features-section ul .seccol a:hover {
+    color: black;
+    background-color: #77fa5c;
+    border: 3px solid black;
+    cursor: pointer;
+  }
+  .features-section ul li {
+    margin: 0 1em;
+  }
+  .features-section ul li .seccol {
+    display: block;
+    font-weight: bold;
+    margin-top: 3em;
+  }
+  .contact-section {
+    position: relative;
+  }
+  .contact-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+  }
+  .login-section {
+    background-image: url(../images/Why-Automated-Testing-Advantages-of-Automated-Testing.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+  }
+  .login-section .containment {
+    width: 360px;
+    padding: 10% 0 0;
+    margin: auto;
+  }
+  .login-section .containment .A {
+    color: white;
+    margin-top: -1em;
+    margin-bottom: 1em;
+  }
+  .login-section .containment .E {
+    color: white;
+    margin-top: -1em;
+    margin-bottom: 1em;
+  }
+  .login-section .containment .U {
+    color: white;
+    margin-top: -1em;
+    margin-bottom: 1em;
+  }
+  .form {
+    position: relative;
+    z-index: 1;
+    background: rgba(7, 40, 195, 0.8);
+    max-width: 360px;
+    margin: -12em auto 100px;
+    padding: 45px;
+    text-align: center;
+    border-radius: 2em;
+  }
+  .form input {
+    font-size: 'Poppins';
+    outline: 1;
+    background: white;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 14px;
+  }
+  .button {
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .3em;
+    outline: 0;
+    background: black;
+    border: 5px solid black;
+    border-radius: 5em;
+    width: 100%;
+    color: white;
+    padding: .4em;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  .button:hover {
+    background: #77fa5c;
+    color: black;
+  }
+  .button2 {
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .3em;
+    outline: 0;
+    background: black;
+    border: 5px solid black;
+    border-radius: 5em;
+    width: 100%;
+    color: white;
+    padding: .4em;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  .button2:hover {
+    background: #77fa5c;
+    color: black;
+  }
+  .button:active {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  .button3 {
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .3em;
+    outline: 0;
+    background: black;
+    border: 5px solid black;
+    border-radius: 5em;
+    width: 100%;
+    color: white;
+    padding: .4em;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  .button3:hover {
+    background: #77fa5c;
+    color: black;
+  }
+  .button:active {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  .button4 {
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .3em;
+    outline: 0;
+    background: black;
+    border: 5px solid black;
+    border-radius: 5em;
+    width: 100%;
+    color: white;
+    padding: .4em;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  .button4:hover {
+    background: #77fa5c;
+    color: black;
+  }
+  .button:active {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  .login-section {
+    display: none;
+  }
+  .reg-section {
+    background-image: url(../images/Why-Automated-Testing-Advantages-of-Automated-Testing.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+  }
+  .reg-section .containment {
+    width: 360px;
+    padding: 10% 0 0;
+    margin: auto;
+  }
+  .reg-section {
+    display: none;
+  }
+  .Admin-section {
+    background-image: url(../images/damon-lam-H6EMwD6pkOE-unsplash.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+  }
+  .Admin-section .containment1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 720px;
+    padding: 0 0 0;
+    margin: auto;
+  }
+  .Admin-section .leftside {
+    background: rgba(7, 195, 16, 0.8);
+    margin-right: 5em;
+    margin-left: -7em;
+    height: 20em;
+    width: 25em;
+    border-radius: 2em;
+    padding: 3em 0 0 2em;
+  }
+  .Admin-section .leftside li a {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    background: black;
+    padding: .3em;
+    border-radius: 5em;
+  }
+  .Admin-section .leftside li a:hover {
+    background: rgba(7, 195, 16, 0.8);
+    border: 4px solid black;
+    color: black;
+  }
+  .Admin-section .leftside li {
+    margin-bottom: 2em;
+  }
+  .Admin-section .rightside {
+    background: rgba(7, 195, 16, 0.8);
+    margin-right: -7em;
+    border-radius: 2em;
+    padding: 3em 1em 0 2em;
+  }
+  .Admin-section .rightside p {
+    font-size: 30px;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+  .Admin-section .rightside li {
+    margin-left: 1.5em;
+    font-weight: bold;
+  }
+  .Admin-section {
+    display: none;
+  }
+  .Expert-section {
+    background-image: url(../images/damon-lam-H6EMwD6pkOE-unsplash.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+  }
+  .Expert-section .containment2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3.1fr;
+        grid-template-columns: 1fr 3.1fr;
+    grid-gap: .2em;
+    padding: 0 0 0;
+    margin-top: -6em;
+    height: 80vh;
+  }
+  .Expert-section .containment2 h1 {
+    color: white;
+  }
+  .Expert-section .containment2 .search-container {
+    background-color: rgba(7, 195, 16, 0.8);
+    height: 100px;
+    width: 300px;
+    padding: 2em 2em;
+  }
+  .Expert-section .containment2 .search-container input {
+    font-family: 'Poppins';
+    height: 100%;
+    width: 98%;
+    border-radius: 3em;
+    padding: .4em;
+  }
+  .Expert-section .containment2 .inbox-title {
+    background-color: rgba(7, 195, 16, 0.8);
+    height: 100px;
+    padding: .7em;
+  }
+  .Expert-section .containment2 .inbox-title h1 {
+    margin-right: 3em;
+    margin-bottom: .2em;
+  }
+  .Expert-section .containment2 .inbox-title p {
+    color: white;
+  }
+  .Expert-section .containment2 .new-message-container {
+    background-color: rgba(7, 195, 16, 0.8);
+    height: 446px;
+  }
+  .Expert-section .containment2 .new-message-container h1 {
+    padding-left: .7em;
+    margin-bottom: .7em;
+    background-color: black;
+  }
+  .Expert-section .containment2 .message-view {
+    background-color: white;
+    height: 446px;
+    padding: .7em;
+  }
+  .Expert-section {
+    display: none;
+  }
+  .User-section {
+    background-image: url(../images/damon-lam-H6EMwD6pkOE-unsplash.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+  }
+  .User-section .containment1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 720px;
+    padding: 0 0 0;
+    margin: auto;
+  }
+  .User-section .leftside {
+    background: rgba(7, 195, 16, 0.8);
+    margin-right: 5em;
+    margin-left: -7em;
+    height: 20em;
+    width: 25em;
+    border-radius: 2em;
+    padding: 3em 0 0 2em;
+  }
+  .User-section .leftside li a {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    background: black;
+    padding: .3em;
+    border-radius: 5em;
+  }
+  .User-section .leftside li a:hover {
+    background: rgba(7, 195, 16, 0.8);
+    border: 4px solid black;
+    color: black;
+  }
+  .User-section .leftside li {
+    margin-bottom: 2em;
+  }
+  .User-section .rightside {
+    background: rgba(7, 195, 16, 0.8);
+    margin-right: -7em;
+    border-radius: 2em;
+    padding: 3em 1em 0 2em;
+  }
+  .User-section .rightside p {
+    font-size: 30px;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+  .User-section .rightside li {
+    margin-left: 1.5em;
+    font-weight: bold;
+  }
+  .User-section {
+    display: none;
+  }
+}
+
+.contact-section {
+  display: none;
+}
+/*# sourceMappingURL=mystyle.css.map */
